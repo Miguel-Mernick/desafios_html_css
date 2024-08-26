@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>desafio formulario</title>
+</head>
+<body>
+    <form action="agradecimento.html">
+        <h1 class="t2">Formulario</h1>
+        <p>Digite o seu nome <input type="text" name="name" placeholder="Digite aqui" required></p>
+        <p>Digite o seu endereço <input type="text" name="esdereco" value="Rua e nr"> </p>
+        <p>Digite o Bairro <input type="text" name="bairro" value="Bairro"></p>
+        <p>Digite a Cidade <input type="text" name="cidade" value="Santo André"></p>
+        <p>Entre com a sua mensagem</p>
+        <textarea name="mensagem" cols="60" rows="10" placeholder="Digite até 500 caracteres" maxlength="500"></textarea>
+        <p>Escolha o(s) modelo(s) de trabalho</p>
+        <ul style="list-style: disc;"><li><input type="checkbox" name="presencial">Presencial</li>
+            <li><input type="checkbox" name="remoto">Remotol</li>
+            <li><input type="checkbox" name="hibrido">Híbrido</li>
+        </ul>
+        <p>Escolha o período de trabalho:</p>
+        <ul style="list-style-type: disc;">
+            <li><input type="radio" name="trabalho">Manhã</li>
+            <li><input type="radio" name="trabalho">Tarde</li>
+            <li><input type="radio" name="trabalho">Noite</li>
+        </ul>
+        <p>Escolha um Estado:</p>
+        <ul>
+        <label for="opcoes"></label>
+        <select id="opcoes" name="opcoes">
+            <option value="opcao1">Acre</option>
+            <option value="opcao2">São Paulo</option>
+            <option value="opcao3">Rio de Janeiro</option>
+            <option value="opcao4">Piauí</option>
+            <option value="opcao5">Ceará</option>
+            <option value="opcao6">Bahia</option>
+            <option value="opcao7">Mato Grosso</option>
+            <option value="opcao8">Mato Grosso do Sul</option>
+            
+        </select>
+        </ul>
+        <p><input type="checkbox" name="termos">Aceita os termos de uso do site</p>
+        <a href="agradecimento.html" target="_self"><input type="submit" name="enviar" value="Enviar dados"></a> <button type="reset">Límpar dados</button>
+    </form>
+</body>
+</html>
